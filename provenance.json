@@ -1,0 +1,26 @@
+{
+  "scope": "Complete supplied application/integration modules preserved byte-for-byte; only the original velocity-assignment block is executed by the baseline wrapper.",
+  "sources": [
+    {
+      "original_relative_path": "flow_use/perception-system/odometry/visual_odometry.py",
+      "retained_path": "origin/perception-system/odometry/visual_odometry.py",
+      "sha256": "abbdc47ae497c5832637470b05c6ce35c82ae244aeae411524be6081c89938a0",
+      "bytes": 13509
+    },
+    {
+      "original_relative_path": "flow_use/perception-system/core/types.py",
+      "retained_path": "origin/perception-system/core/types.py",
+      "sha256": "2370efcf332e41fad84bffc1658c2a794b72b1b7fc26e7f9f71ae84b16757c66",
+      "bytes": 10788
+    }
+  ],
+  "baseline": {
+    "module": "dhara/baseline.py",
+    "source_lines": [
+      167,
+      169
+    ],
+    "method_body_unchanged": true
+  },
+  "attribution": "Application/integration source supplied from Fahim Faisal\u2019s work archive; upstream libraries/models remain their authors\u2019 work. No model weights or blanket historical-source redistribution license are included."
+}

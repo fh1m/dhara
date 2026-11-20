@@ -1,0 +1,188 @@
+{
+  "run_utc": "2026-11-20T02:29:20.532623+00:00",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.5"
+  },
+  "scope": "Controlled metric positions; unchanged archived numerical block; no image, model, camera, ROS runtime or vehicle validation",
+  "baseline_source": "origin/perception-system/odometry/visual_odometry.py:167-169",
+  "state_contract_source": "origin/perception-system/core/types.py:226-227",
+  "truth_velocity_mps": [
+    0.5,
+    0.0,
+    0.0
+  ],
+  "uniform_cadences": [
+    {
+      "nominal_accepted_pose_hz": 10,
+      "interval_ns": 100000000,
+      "archived_field_m_per_update": [
+        0.04999999999999982,
+        0.0,
+        0.0
+      ],
+      "corrected_interval_average_mps": [
+        0.4999999999999982,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nominal_accepted_pose_hz": 25,
+      "interval_ns": 40000000,
+      "archived_field_m_per_update": [
+        0.020000000000000018,
+        0.0,
+        0.0
+      ],
+      "corrected_interval_average_mps": [
+        0.5000000000000004,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nominal_accepted_pose_hz": 50,
+      "interval_ns": 20000000,
+      "archived_field_m_per_update": [
+        0.009999999999999787,
+        0.0,
+        0.0
+      ],
+      "corrected_interval_average_mps": [
+        0.49999999999998934,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nominal_accepted_pose_hz": 60,
+      "interval_ns": 16666667,
+      "archived_field_m_per_update": [
+        0.008333333499999984,
+        0.0,
+        0.0
+      ],
+      "corrected_interval_average_mps": [
+        0.49999999999999906,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "irregular_capture_intervals": [
+    {
+      "capture_pair_ns": [
+        1000000000,
+        1020000000
+      ],
+      "archived_field_m_per_update": [
+        0.009999999999999787,
+        0.0,
+        0.0
+      ],
+      "corrected_interval_average_mps": [
+        0.49999999999998934,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "capture_pair_ns": [
+        1020000000,
+        1060000000
+      ],
+      "archived_field_m_per_update": [
+        0.020000000000000018,
+        0.0,
+        0.0
+      ],
+      "corrected_interval_average_mps": [
+        0.5000000000000004,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "capture_pair_ns": [
+        1060000000,
+        1260000000
+      ],
+      "archived_field_m_per_update": [
+        0.10000000000000009,
+        0.0,
+        0.0
+      ],
+      "corrected_interval_average_mps": [
+        0.5000000000000004,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "capture_pair_ns": [
+        1260000000,
+        1310000000
+      ],
+      "archived_field_m_per_update": [
+        0.02499999999999991,
+        0.0,
+        0.0
+      ],
+      "corrected_interval_average_mps": [
+        0.4999999999999982,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "capture_pair_ns": [
+        1310000000,
+        2000000000
+      ],
+      "archived_field_m_per_update": [
+        0.3450000000000002,
+        0.0,
+        0.0
+      ],
+      "corrected_interval_average_mps": [
+        0.5000000000000003,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "capture_vs_completion": {
+    "capture_pair_ns": [
+      1000000000,
+      1100000000
+    ],
+    "completion_pair_ns": [
+      1030000000,
+      1300000000
+    ],
+    "capture_time_result_mps": [
+      0.4999999999999982,
+      0.0,
+      0.0
+    ],
+    "completion_time_result_mps": [
+      0.18518518518518454,
+      0.0,
+      0.0
+    ],
+    "meaning": "Positive completion intervals still use the wrong event times for pose velocity"
+  },
+  "invalid_intervals": [
+    {
+      "case": "duplicate",
+      "status": "refused",
+      "error": "Capture timestamps must strictly increase"
+    },
+    {
+      "case": "backwards",
+      "status": "refused",
+      "error": "Capture timestamps must strictly increase"
+    }
+  ]
+}

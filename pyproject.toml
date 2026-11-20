@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dhara"
+version = "0.1.0"
+description = "Capture-time and velocity-unit contracts in an archived visual-odometry system"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24"]
+
+[project.scripts]
+dhara = "dhara.experiment:main"
+
+[tool.setuptools.packages.find]
+include = ["dhara*"]
